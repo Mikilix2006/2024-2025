@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+    margin: 0%;
+}
+
+header {
+    border-bottom: solid black;
+    background-color: rgb(156, 156, 156);
+}
+
+footer {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    color: rgb(172, 172, 172);
+    border-top: solid grey;
+    background-color: rgb(44, 44, 44);
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0));
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    border-radius: 40px 110px 40px 110px;
+}
+
+nav:hover {
+    position: absolute;
+}
+
+.tabla_footer {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* FORMULARIOS */
+
+.img_motogp_formulario {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+}
+
+.img_perfil {
+    border-radius: 5rem;
+    width: 15%;
+}
+
+.registro {
+    text-align: center;
+    font-size: 0.8vw;
+}
+
+.tabla_register {
+    background-color: #d8d8d8;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: -1px -1px 6px 0 rgb(200, 232, 236), 4px 4px 16px 2px rgb(102, 153, 207);
+}
+
+.tabla_login {
+    background-color: #d8d8d8;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: -1px -1px 6px 0 rgb(236, 200, 200), 4px 4px 16px 2px rgb(207, 102, 102);
+}
+
+.form_bg {
+    background: #d8d8d8;
+    background-color: rgb(216, 216, 216);
+    background-image: url(img_practica_final/fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tabla_register_imgs {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 2px;
+}
+
+.text_inputs {
+    border-radius: 8px;
+    border-color: rgb(17, 151, 192);
+}
+
+.sombra_imgs {
+    display: inline-block;
+}
+
+.btn_menu {
+    position: absolute;
+    margin-top: -0.5%;
+    width: 5%;
+    border: none;
+    background-color: transparent;
+}
+
+.btn_menu:hover .btn_menu-content {
+    display: block;
+    border: none;
+    box-shadow: 2px 2px 0 rgb(255, 255, 255);
+}
+
+.btn_menu-content {
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0));
+    border-radius: 40px 110px 40px 110px;
+    display: none;
+    font-size: 120%;
+    min-width: 120%;
+}
+
+.btn_menu-content:hover {
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(143, 196, 0), rgb(0, 0, 0));
+}
+
+.link { 
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+
+}
+
+.scroll_down {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.redes {
+    border-radius: 12px;
+}
+
+/* INDEX */
+
+.index_title {
+    color: white;
+    font-size: 5vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    margin: 5%;
+    margin-top: 15%;
+    margin-bottom: 20%;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid;
+    border-color: black;
+    border-radius: 20px 110px 20px 110px;
+}
+
+.index_bg {
+    background-image: url(./img_practica_final/indexbackground.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* DESCRIPTION */
+
+.desc_bg {
+    background: linear-gradient( black, #081836, #071127);
+    background-attachment: fixed;
+}
+
+.desc_title {
+    color: white;
+    margin: 10%;
+    font-weight: bold;
+    font-size: 2.8vw;
+    border-bottom: white 3px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.desc_subtitle {
+    color: white;
+    margin: 5%;
+    font-weight: bold;
+    font-size: 1.8vw;
+    border-bottom: white 1.5px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.desc_grid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.desc_tarjeta {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px #0c1936;
+    border-radius: 10px;
+    background-color: #172a52;
+    width: 20%;
+    height: 40%;
+    margin-top: 6%;
+    align-items: center;
+    filter: grayscale(100);
+    transition: 0.5s;
+}
+
+.desc_tarjeta_title {
+    color: white;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.desc_img_tarjeta {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: grayscale(100);
+    transition: 0.5s;
+}
+
+.desc_bandera {
+    width: 9%;
+    margin-left: 4%;
+    border-radius: 5px;
+}
+
+.desc_descripciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.desc_descripciones_img {
+    object-fit: cover;
+    border-radius: 20px;
+    width: 170%;
+}
+
+.desc_tarjeta:hover {
+    filter: grayscale(0);
+    transition: 0.5s;
+    width: 22%;
+}
+
+.desc_img_tarjeta:hover {
+    filter: brightness(1.5);
+    filter: grayscale(0);
+    transition: 0.5s;
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="shortcut icon" href="./img_practica_final/logoMotoGP.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoGP</title>
+</head>
+
+<body class="form_bg">
+    <header>
+        <table class="img_motogp_formulario">
+            <tr>
+                <td style="width:10%; align-items: center; margin:10%;">
+                    <div class="btn_menu">
+                        <span><img src="./img_practica_final/menu.svg" alt="Menú" width="25%"></span>
+                        <div class="menu-content">
+                            <nav>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <button class="btn_menu-content"><a href="./index.html"
+                                                    class="link">Portal</a></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn_menu-content"><a href="./description.html"
+                                                    class="link">Descripción</a></button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </nav>
+                        </div>
+                    </div>
+                </td>
+                <td style="width:80%;">
+                    <div>
+                        <a href="./index.html">
+                            <img src="./img_practica_final/logoMotoGP.png" alt="MotoGP.com" title="MotoGP" width="5%">
+                        </a>
+                    </div>
+                </td>
+                <td style="width:10%; align-items: center; margin:10%;">
+                    <div class="btn_menu">
+                        <span><img src="./img_practica_final/usuarioIcon.svg" alt="Menú" width="40%"></span>
+                        <div class="menu-content">
+                            <nav>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <button class="btn_menu-content"><a href="./log_in.html" class="link">Log
+                                                    in</a></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn_menu-content"><a href="./register.html"
+                                                    class="link">Register</a></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn_menu-content"><a href="./Log Out.html" class="link">Log
+                                                    Out</a></button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </nav>
+                        </div>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table style="width: 100%;">
+        <tr>
+            <td style="width: 100%;" colspan="2">
+                <main>
+                    <section>
+                        <br>
+                        <table class="tabla_register_imgs" style="width: 70%;">
+                            <td style="text-align: right; width:33%;">
+                                <img src="./img_practica_final/registerFotoIzquierda.png" alt="rossi_adorno"
+                                    style="width: 60%; filter: drop-shadow(25px 25px #3e8be2b3); margin:5%;"
+                                    class="sombra_imgs">
+                            </td>
+                            <td style="width:33%;">
+                                <table class="tabla_register">
+                                    <td>
+                                        <form action="archivo.php" method="post">
+                                            <img src="./img_practica_final/fotoPerfil.png" alt="perfil"
+                                                class="img_perfil">
+                                            <div class="registro">
+                                                <h2>Registrarse</h2>
+                                                <table style="margin: auto;">
+                                                    <tr>
+                                                        <td>
+                                                            <label for="name">*Nombre</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" name="reg" id="name"
+                                                                placeholder="Introduce tu nombre" required
+                                                                class="text_inputs">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="apell">*Apellido</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" name="reg" id="apell"
+                                                                placeholder="Introduce tu apellido" required
+                                                                class="text_inputs">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="usu">*Nombre de usuario</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" name="reg" id="usu"
+                                                                placeholder="Introduce tu nickname" required
+                                                                class="text_inputs">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="correo">*Correo</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="email" name="reg" id="correo"
+                                                                placeholder="Introduce tu correo" required
+                                                                class="text_inputs">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="contraseña">*Contraseña</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="password" name="reg" id="contraseña"
+                                                                placeholder="Introduce tu contraseña" required
+                                                                class="text_inputs" minlength="6">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <br>
+                                                <table style="margin: auto;">
+                                                    <tr>
+                                                        <td colspan="2" style="width: 50%;">
+                                                            <label for="sexo"><strong>*Sexo</strong></label>
+                                                        </td>
+                                                        <td style="width: 50%;" colspan="2">
+                                                            <label for="notis"><strong>Recibir notificaciones
+                                                                    para:</strong></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="sexo" id="male" required>
+                                                        </td>
+                                                        <td style="text-align: left;">
+                                                            <label for="male">Hombre</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="checkbox" name="notis" id="gp">
+                                                        </td>
+                                                        <td style="text-align: left;">
+                                                            <label for="gp">Avisos de GPs</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="sexo" id="female" required>
+                                                        </td>
+                                                        <td style="text-align: left;">
+                                                            <label for="female">Mujer</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="checkbox" name="notis" id="actualiz">
+                                                        </td>
+                                                        <td style="text-align: left;">
+                                                            <label for="actualiz">Actualizaciones</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="sexo" id="none" required>
+                                                        </td>
+                                                        <td style="text-align: left;">
+                                                            <label for="none">Prefiero no decirlo</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="checkbox" name="notis" id="fichaje">
+                                                        </td>
+                                                        <td style="text-align: left;">
+                                                            <label for="fichaje">Nuevos rookies</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <br>
+                                                            <input type="checkbox" name="aceptar" id="terms" required>
+                                                            <label for="terms">*He leído y acepto los <a
+                                                                    href="./terms.html">términos y
+                                                                    condiciones</a> de MotoGP.es</label>
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <br>
+                                                            <input type="submit" value="Crear cuenta">
+                                                            <p>¿Ya tienes una cuenta? Inicia sesión <a
+                                                                    href="./log_in.html">aquí</a>.
+                                                                <br>
+                                                                Los campos marcados con * son obligatorios.
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </form>
+                                    </td>
+                                </table>
+                            </td>
+                            <td style="text-align: left; width:33%;">
+                                <img src="./img_practica_final/registerFotoDerecha.png" alt="marquez_adorno"
+                                    style="width: 80%; filter: drop-shadow(-30px -10px #e2803eb3); margin:5%;">
+                            </td>
+                        </table>
+                    </section>
+                </main>
+            </td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="scroll_down">
+        <img src="./img_practica_final/flecha.svg" alt="Scroll down" style="width: 2%;">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 15%; text-align:right;">
+                    <img src="./img_practica_final/logoMotoGP.png" alt="MotoGP logo" style="width: 50%;">
+                </td>
+            </tr>
+            <tr>
+                <td>CONTENIDO</td>
+                <td>CONCEPTO INICIAL</td>
+                <td>CONTACTANOS</td>
+                <td>REDES SOCIALES</td>
+            </tr>
+            <tr>
+                <td>Guía de circuitos</td>
+                <td><a href="./img_practica_final/Prueba 1ª Evaluación.png" style="color: rgb(182, 182, 182);">Imagen
+                        concepto inicial</a>
+                </td>
+                <td>miguel.gonzalezdelgado1@educa.madrid.org</td>
+                <td><a href="https://x.com/home"><img src="./img_practica_final/twitter.png" alt="x.com"
+                            style="width: 5%;" title="x.com" class="redes"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    Guía de pilotos
+                </td>
+                <td></td>
+                <td>
+                    soporte@empresa.com
+                </td>
+                <td>
+                    <a href="https://www.instagram.com"><img src="./img_practica_final/instagram.jpeg" alt="instagram"
+                            style="width: 5%;" title="Instagram.com" class="redes"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Guía de categorías
+                </td>
+                <td></td>
+                <td>
+                    atencion.alcliente@empresa.com
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com"><img src="./img_practica_final/linkedin.png" alt="linkedin"
+                            style="width: 5%;" title="linkedin.com" class="redes"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Guía de LEYENDAS
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="https://www.youtube.com"><img src="./img_practica_final/youtube.png" alt="YouTube"
+                            style="width: 5%;" title="YouTube.com" class="redes"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br><br><br><br><br>
+                    <a href="" class="link">Términos y condiciones</a>
+                    <br>
+                    
+                </td>
+                <td>
+                    <br><br><br><br><br>
+                    <a href="" class="link">Política de privacidad</a>
+                </td>
+                <td style="text-align: left;">
+                    <br><br><br><br><br>
+                    <a href="" class="link">Política de cookies</a>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <p style="text-align: left; margin: 3%;">Copyright © 2024 MotoGP-Miguel González Delgado 1ºDAW. Todos los derechos reservados.</p>
+        <br><br><br>
+    </footer>
+</body>
+
+</html>
