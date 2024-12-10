@@ -1,7 +1,6 @@
 gases = ["P", "V", "T"]
-hola = "s"
 
-while hola == "s":
+while True:
     correcto = False
     while not correcto:
         correcto = False
